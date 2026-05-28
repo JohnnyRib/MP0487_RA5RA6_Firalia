@@ -145,13 +145,11 @@ $eventos_query = $conexion->query("SELECT * FROM EVENTOS");
                                 <div class="event-info">
                                     <h2><?= htmlspecialchars($evento['NOMBRE']) ?></h2>
 
-                        /*==============================================================================================================================
-                            La fuente del error, aqui este if deberia hacer que este boton solo aparesca cuando el tipo de rol de esta cuenta es el 1, 
-                            el tipo representa los admins. 
-                        ==============================================================================================================================*/
-                                    <?php if (isset($_SESSION['rol'])): ?>
-                                        <a href="eventManager.php?id=<?= $evento['ID'] ?>" class="btn btn-primary btn-sm">Manage</a>
-                                    <?php endif; ?>
+                                  
+                        <?php if (isset($_SESSION['ROL']) == 1 ) :?>
+                                                      
+                        <a href="eventManager.php?id=<?= $evento['ID'] ?>" class="btn btn-primary btn-sm">Manage</a>
+                                    <?php endif;?>
                                 </div>
                             </div>
 
