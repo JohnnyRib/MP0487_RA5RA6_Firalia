@@ -3,6 +3,9 @@
 //https://www.youtube.com/watch?v=5L9UhOnuos0&t=801s
 //Credenciales que usaremos para entrar en la bbdd
 
+
+//first Commit
+
 $host ="localhost";
 $dbname = "mp0487_firalia";
 $username = "root"; //IMPORTANTE CAMBIAR , NO QUEREMOS ENTRAR CON ROOT
